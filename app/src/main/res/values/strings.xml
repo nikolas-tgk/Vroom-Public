@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Vroom</string>
+
+    <string name="type_your_message">Type your message</string>
+
+    <string-array name="num_of_riders">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="cities_eng">
+        <item>Agios Nikolaos</item>
+        <item>Agrinio</item>
+        <item>Aigio</item>
+        <item>Alexandreia</item>
+        <item>Alexandroupoli</item>
+        <item>Amaliada</item>
+        <item>Argos</item>
+        <item>Argostoli</item>
+        <item>Arta</item>
+        <item>Athens</item>
+        <item>Chalkida</item>
+        <item>Chania</item>
+        <item>Corinth</item>
+        <item>Drama</item>
+        <item>Edessa</item>
+        <item>Florina</item>
+        <item>Giannitsa</item>
+        <item>Grevena</item>
+        <item>Heraklion</item>
+        <item>Ierapetra</item>
+        <item>Igoumenitsa</item>
+        <item>Ioannina</item>
+        <item>Kalamata</item>
+        <item>Kalymnos</item>
+        <item>Karditsa</item>
+        <item>Kastoria</item>
+        <item>Katerini</item>
+        <item>Kavala</item>
+        <item>Kilkis</item>
+        <item>Komotini</item>
+        <item>Kozani</item>
+        <item>Lamia</item>
+        <item>Larissa</item>
+        <item>Livadeia</item>
+        <item>Loutraki</item>
+        <item>Mesolongi</item>
+        <item>Nafpaktos</item>
+        <item>Nafplio</item>
+        <item>Naousa</item>
+        <item>Nea Moudania</item>
+        <item>Orestiada</item>
+        <item>Patra</item>
+        <item>Preveza</item>
+        <item>Ptolemaida</item>
+        <item>Pyrgos</item>
+        <item>Rethymno</item>
+        <item>Serres</item>
+        <item>Sitia</item>
+        <item>Sparta</item>
+        <item>Thebes</item>
+        <item>Thessaloniki</item>
+        <item>Trikala</item>
+        <item>Tripoli</item>
+        <item>Tyrnavos</item>
+        <item>Veria</item>
+        <item>Volos</item>
+        <item>Xanthi</item>
+    </string-array>
+
+    <string-array name="cities_eng__PLUS_ANYWHERE">
+        <item>Anywhere</item>
+        <item>Agios Nikolaos</item>
+        <item>Agrinio</item>
+        <item>Aigio</item>
+        <item>Alexandreia</item>
+        <item>Alexandroupoli</item>
+        <item>Amaliada</item>
+        <item>Argos</item>
+        <item>Argostoli</item>
+        <item>Arta</item>
+        <item>Athens</item>
+        <item>Chalkida</item>
+        <item>Chania</item>
+        <item>Corinth</item>
+        <item>Drama</item>
+        <item>Edessa</item>
+        <item>Florina</item>
+        <item>Giannitsa</item>
+        <item>Grevena</item>
+        <item>Heraklion</item>
+        <item>Ierapetra</item>
+        <item>Igoumenitsa</item>
+        <item>Ioannina</item>
+        <item>Kalamata</item>
+        <item>Kalymnos</item>
+        <item>Karditsa</item>
+        <item>Kastoria</item>
+        <item>Katerini</item>
+        <item>Kavala</item>
+        <item>Kilkis</item>
+        <item>Komotini</item>
+        <item>Kozani</item>
+        <item>Lamia</item>
+        <item>Larissa</item>
+        <item>Livadeia</item>
+        <item>Loutraki</item>
+        <item>Mesolongi</item>
+        <item>Nafpaktos</item>
+        <item>Nafplio</item>
+        <item>Naousa</item>
+        <item>Nea Moudania</item>
+        <item>Orestiada</item>
+        <item>Patra</item>
+        <item>Preveza</item>
+        <item>Ptolemaida</item>
+        <item>Pyrgos</item>
+        <item>Rethymno</item>
+        <item>Serres</item>
+        <item>Sitia</item>
+        <item>Sparta</item>
+        <item>Thebes</item>
+        <item>Thessaloniki</item>
+        <item>Trikala</item>
+        <item>Tripoli</item>
+        <item>Tyrnavos</item>
+        <item>Veria</item>
+        <item>Volos</item>
+        <item>Xanthi</item>
+    </string-array>
+
+</resources>

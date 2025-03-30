@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="soft_black">#424242</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="yellow">#F5DD42</color>
+    <color name="star_yellow">#ffe234</color>
+    <color name="alert_red">#eb2323</color>
+    <color name="deny_red">#f44336</color>
+    <color name="soft_red">#F47174 </color>
+    <color name="light_background_color">#D3D3D3</color>
+    <color name="light_gray_text_color">#212427</color>
+
+    <color name="primary_color">#4f44c7</color>
+    <color name="darker_primary_color">#3d3599</color>
+    <color name="secondary_color">#685ed1</color>
+
+    <color name="rippleColor">#3d3599</color>
+
+    <color name="gray">#e4e4e4</color>
+    <color name="dark_gray">#a6a6a6</color>
+
+    <color name="positive_green">#008000</color>
+    <color name="approve_green">#334e30</color>
+    <color name="completed_green">#6CE86C</color>
+
+    <color name="t_primary_c">#01AEd8</color>
+    <color name="transparent">#00FFFFFF</color>
+    
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#292b3d</color>
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+</resources>

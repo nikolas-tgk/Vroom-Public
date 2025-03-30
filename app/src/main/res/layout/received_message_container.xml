@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="4dp"
+    android:layout_marginTop="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileMsgImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/receivedMsgTextView"
+        android:scaleType="centerCrop"
+        android:background="@color/gray"/>
+    
+    <TextView
+        android:id="@+id/receivedMsgTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/background_received_message"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintWidth_max="wrap"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/profileMsgImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.74"
+        />
+
+    <TextView
+        android:id="@+id/receiveDateTimeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="@id/receivedMsgTextView"
+        app:layout_constraintTop_toBottomOf="@id/receivedMsgTextView"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

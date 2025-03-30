@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileTopToolbar"
+    >
+    <item
+        android:title="Settings"
+        android:id="@+id/settingsTab"
+        android:icon="@drawable/baseline_settings_24"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:iconTint="@color/white"/>
+    <item
+        android:title="Share App"
+        android:id="@+id/shareTab"
+        android:icon="@drawable/baseline_share_24"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="3"
+        android:iconTint="@color/white"/>
+
+    <item
+        android:title="Search"
+        android:id="@+id/searchTab"
+        android:icon="@drawable/baseline_search_24"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:orderInCategory="1"
+        android:iconTint="@color/white"
+        />
+</menu>
