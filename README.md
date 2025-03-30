@@ -32,3 +32,24 @@ This is a **mobile application for Android**, developed using **Java (JDK 21)** 
 •	**Firebase Messaging** (Push Notifications)  
 •	**Firebase Firestore** (Cloud Database)  
 •	**Firebase Authentication** (Authentication)  
+**App Preview**  
+![image](https://github.com/user-attachments/assets/b78215eb-be4d-4845-9930-0069d29d7b5a)  ![image](https://github.com/user-attachments/assets/3950ba73-a9d5-429c-ad31-63ff683ca801)  ![image](https://github.com/user-attachments/assets/53d02dc5-f70c-49c9-9d6f-ef9aa2da2159)  ![image](https://github.com/user-attachments/assets/3aef74e6-75c0-4360-96c6-3db44a919b24)  ![image](https://github.com/user-attachments/assets/686bf36c-0a56-49da-a4ef-8ab9da107a48)  ![image](https://github.com/user-attachments/assets/7ac453e6-b996-420c-842e-82893e67ceb6)  ![image](https://github.com/user-attachments/assets/7523569a-47a3-4dbe-a09f-032f28ce6be7)  ![image](https://github.com/user-attachments/assets/a58ac3a3-60a8-4caa-b2c4-4d71ebf7801b)  ![image](https://github.com/user-attachments/assets/e545d482-54c2-4a13-acc4-7dcd8c7f3ff4)  ![image](https://github.com/user-attachments/assets/b9c6e63e-d4ac-47e9-85c3-6a59c6261553)  ![image](https://github.com/user-attachments/assets/dba4e550-ac7a-459f-a44b-48894f5695d8)  ![image](https://github.com/user-attachments/assets/94aa3622-8e19-4bb2-81a8-8e8ce33a73c3)  ![image](https://github.com/user-attachments/assets/fd53084c-c686-4473-ae93-bd57c5eaa60d)  ![image](https://github.com/user-attachments/assets/218ee186-059e-4514-a63a-a03d82cb2bc8)  ![image](https://github.com/user-attachments/assets/13612c07-5b24-4768-8a99-2aa100e74e63)  ![image](https://github.com/user-attachments/assets/d6e3fdc8-89d3-4e4d-a297-4fed600dc103)  ![image](https://github.com/user-attachments/assets/cb362313-cdb3-47fa-ab5d-ca588e94c3f2)  ![image](https://github.com/user-attachments/assets/36612ef2-0879-4778-9760-94641c50c66f)   ![image](https://github.com/user-attachments/assets/8015cd8f-1120-4a05-9142-1694db87972c)  ![image](https://github.com/user-attachments/assets/b89d4317-c0fb-478f-ae1c-b11ab01670f7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
