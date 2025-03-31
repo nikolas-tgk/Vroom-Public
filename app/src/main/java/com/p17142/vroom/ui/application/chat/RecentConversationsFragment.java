@@ -22,7 +22,7 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.p17142.vroom.R;
-import com.p17142.vroom.adapters.RecentConvertationAdapter;
+import com.p17142.vroom.adapters.RecentConversationAdapter;
 import com.p17142.vroom.databinding.FragmentChatsMainBinding;
 import com.p17142.vroom.listeners.ConversationListener;
 import com.p17142.vroom.models.Message;
@@ -31,17 +31,16 @@ import com.p17142.vroom.utilities.Constants;
 import com.p17142.vroom.utilities.PreferenceManager;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 
 public class RecentConversationsFragment extends Fragment implements ConversationListener {
-    // First Chat Screen, recent convertations screen
+    // First Chat Screen, recent conversations screen
 
     private FragmentChatsMainBinding binding; // old name
     private PreferenceManager preferenceManager;
-    private List<Message> convertations;
-    private RecentConvertationAdapter recentConvertationAdapter;
+    private List<Message> conversations;
+    private RecentConversationAdapter recentConversationAdapter;
     private FirebaseFirestore database;
 
     @Override
@@ -67,9 +66,9 @@ public class RecentConversationsFragment extends Fragment implements Conversatio
 
     private void init(){
         preferenceManager = new PreferenceManager(requireContext());
-        convertations = new ArrayList<>();
-        recentConvertationAdapter = new RecentConvertationAdapter(convertations,this, preferenceManager.getString(KEY_UID)); // initialize adapter
-        binding.recentConvertationsRecyclerView.setAdapter(recentConvertationAdapter);
+        conversations = new ArrayList<>();
+        recentConversationAdapter = new RecentConversationAdapter(conversations,this, preferenceManager.getString(KEY_UID)); // initialize adapter
+        binding.recentConvertationsRecyclerView.setAdapter(recentConversationAdapter);
         database = FirebaseFirestore.getInstance();
     }
 
@@ -99,32 +98,30 @@ public class RecentConversationsFragment extends Fragment implements Conversatio
                     message.setMessage(documentChange.getDocument().getString(Constants.KEY_LAST_MESSAGE));
                     message.setDate(documentChange.getDocument().getDate(Constants.KEY_DATETIME));
                     message.setMostRecentReceiver(documentChange.getDocument().getString(Constants.KEY_MOST_RECENT_RECEIVER));
-                    convertations.add(message);
+                    conversations.add(message);
                 } else if(documentChange.getType() == DocumentChange.Type.MODIFIED){
-                    for(int i = 0; i < convertations.size(); i++) // new profile pic refresh logic TO-DO
+                    for(int i = 0; i < conversations.size(); i++) // new profile pic refresh logic TO-DO
                     {
                         String senderUid = documentChange.getDocument().getString(Constants.KEY_SENDER_UID);
                         String receiverUid = documentChange.getDocument().getString(Constants.KEY_RECEIVER_UID);
-                        if(convertations.get(i).getSenderUid().equals(senderUid) && convertations.get(i).getReceiverUid().equals(receiverUid)){
-                            convertations.get(i).setMessage(documentChange.getDocument().getString(Constants.KEY_LAST_MESSAGE));
-                            convertations.get(i).setDate(documentChange.getDocument().getDate(Constants.KEY_DATETIME));
-                            convertations.get(i).setMostRecentReceiver(documentChange.getDocument().getString(KEY_MOST_RECENT_RECEIVER));
+                        if(conversations.get(i).getSenderUid().equals(senderUid) && conversations.get(i).getReceiverUid().equals(receiverUid)){
+                            conversations.get(i).setMessage(documentChange.getDocument().getString(Constants.KEY_LAST_MESSAGE));
+                            conversations.get(i).setDate(documentChange.getDocument().getDate(Constants.KEY_DATETIME));
+                            conversations.get(i).setMostRecentReceiver(documentChange.getDocument().getString(KEY_MOST_RECENT_RECEIVER));
                             break;
                         }
                     }
                 }
             }
-
-            convertations.sort((obj1, obj2) -> obj2.getDate().compareTo(obj1.getDate()));
-            recentConvertationAdapter.notifyDataSetChanged();
+            conversations.sort((obj1, obj2) -> obj2.getDate().compareTo(obj1.getDate()));
+            recentConversationAdapter.notifyDataSetChanged();
             binding.recentConvertationsRecyclerView.smoothScrollToPosition(0);
             binding.recentConvertationsRecyclerView.setVisibility(View.VISIBLE);
             binding.loadingMsgsBar.setVisibility(View.GONE);
-            if(convertations.isEmpty())
+            if(conversations.isEmpty())
             {
                 showErrorMessage("No active conversations yet.");
             }
-
         }
     });
 

@@ -14,14 +14,14 @@ import com.p17142.vroom.utilities.ImageUtils;
 
 import java.util.List;
 
-public class RecentConvertationAdapter extends RecyclerView.Adapter<RecentConvertationAdapter.ConversationViewHolder> {
+public class RecentConversationAdapter extends RecyclerView.Adapter<RecentConversationAdapter.ConversationViewHolder> {
 
     private final List<Message> directMessages;
     private final ConversationListener conversationListener;
 
     private String loggedUserUid;
 
-    public RecentConvertationAdapter(List<Message> directMessages, ConversationListener conversationListener, String loggedUserIUid) {
+    public RecentConversationAdapter(List<Message> directMessages, ConversationListener conversationListener, String loggedUserIUid) {
         this.directMessages = directMessages;
         this.conversationListener = conversationListener;
         this.loggedUserUid = loggedUserIUid;
